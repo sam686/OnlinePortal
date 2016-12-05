@@ -3,7 +3,7 @@ package com.sam.onlineportal.service.impl;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import com.sam.onlineportal.bo.Cart;
-import com.sam.onlineportal.bo.CartItem;
+import com.sam.onlineportal.bo.Item;
 import com.sam.onlineportal.dao.OrderDao;
 import com.sam.onlineportal.entity.Order;
 import com.sam.onlineportal.entity.OrderDetail;
@@ -21,7 +21,7 @@ public class OrderServiceImpl implements OrderService  {
 		Order order= new Order();
 		order.setAmount(cart.getTotalAmount());
 		order.setTax(cart.getTotalTax());
-		for(CartItem cartElement : cart.getCartItems())
+		for(Item cartElement : cart.getCartItems())
 		{
 			OrderDetail od= new OrderDetail();
 			od.setProduct(cartElement.getProduct());

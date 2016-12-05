@@ -2,7 +2,7 @@ package com.sam.onlineportal.bo;
 
 import com.sam.onlineportal.entity.Product;
 
-public class CartItem {
+public class Item {
 	
 	private Product product;
 	private Integer quantity;

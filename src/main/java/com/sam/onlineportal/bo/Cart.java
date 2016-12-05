@@ -8,11 +8,11 @@ public class Cart {
 	
 	private Double totalAmount;
 	private Double totalTax;
-	private List<CartItem> cartItems = new ArrayList<CartItem>();
+	private List<Item> cartItems = new ArrayList<Item>();
 
 	
 	public Double getTotalTax() {
-		for(CartItem item:cartItems)
+		for(Item item:cartItems)
 		{
 			totalTax=totalTax+item.getTax();
 		}
@@ -20,12 +20,12 @@ public class Cart {
 		return totalTax;
 	}
 
-	public List<CartItem> getCartItems() {
+	public List<Item> getCartItems() {
 		return cartItems;
 	}
 
 	public Double getTotalAmount() {
-		for(CartItem item:cartItems)
+		for(Item item:cartItems)
 		{
 			totalAmount=totalAmount+item.getAmount();
 		}
