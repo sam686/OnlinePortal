@@ -1,24 +1,13 @@
 package com.sam.onlineportal.bo;
 
-import java.io.Serializable;
 
-public class BillDetail implements Serializable{
+public class BillDetail {
 	
-	
-	private static final long serialVersionUID = 1L;
-	
-	private Integer id;
 	private Double amount;
 	private Double price;
 	private Integer quantity;
 	private ProductInfo product;
 	
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
 	public Double getAmount() {
 		return amount;
 	}
