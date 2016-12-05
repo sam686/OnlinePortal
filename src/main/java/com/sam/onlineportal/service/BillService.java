@@ -5,5 +5,5 @@ import com.sam.onlineportal.bo.Cart;
 
 public interface BillService {
 	
-	public Bill createBill(Cart cart);
+	public Bill generateBill(Cart cart);
 }
